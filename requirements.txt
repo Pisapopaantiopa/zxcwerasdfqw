@@ -1,0 +1,8 @@
+ Зависимости squeeze_monitor.py. Нужен Python 3.9+
+# Установка: pip install -r requirements.txt
+ 
+aiohttp>=3.9,<4
+yarl>=1.9
+ 
+# Часовые пояса (LOCAL_TZ) на Windows: без него скрипт использует фиксированный UTC+3
+tzdata; sys_platform == "win32"
